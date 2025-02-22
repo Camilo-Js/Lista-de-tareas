@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Campo de entrada y botón */
+.task-input {
+    display: flex;
+    gap: 10px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-input button {
+    background-color: pink;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Lista de tareas */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    gap: 5px;
+    padding: 10px;
+}
+
+/* Checkbox */
+.task-container input[type="checkbox"] {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Texto de la tarea */
+.task-label {
+    
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+/* Tarea completada */
+.task-container.completed .task-label {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Botón eliminar */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
